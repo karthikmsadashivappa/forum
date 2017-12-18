@@ -1,7 +1,11 @@
 <% @posts.each do |post| %>
 	<h2><%= link_to post.title, post %></h2>
-	<p>Publised at <%= time_ago_in_words(post.created_at) %></p>
-
-	<% end %>
+	<p>Publised at <%= time_ago_in_words(post.created_at) %> by 
+		<% if !post.user.nil? %>
+  		<%= post.user.email %>
+		<% end %> 
+	<% end %> <br/><br/>
 
 <%= link_to "New Post", new_post_path %>
+
+
