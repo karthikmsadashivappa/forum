@@ -1,11 +1,14 @@
+<div id="posts">
 <% @posts.each do |post| %>
-	<h2><%= link_to post.title, post %></h2>
-	<p>Publised at <%= time_ago_in_words(post.created_at) %> by 
+	<div class="post">
+	<h2 class="title"><%= link_to post.title, post %></h2>
+	<p class="date">Publised at <%= time_ago_in_words(post.created_at) %> by 
 		<% if !post.user.nil? %>
-  		<%= post.user.email %>
+  		<%= post.user.email %></p>
 		<% end %> 
+	</div>
 	<% end %> <br/><br/>
+</div>
 
-<%= link_to "New Post", new_post_path %>
 
 
