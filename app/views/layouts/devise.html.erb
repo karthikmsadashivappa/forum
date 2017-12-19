@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
     <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 
   <!-- Compiled and minified JavaScript -->
@@ -41,10 +41,17 @@
  		
 
   <div class="wrapper">
-
+    <div class="row">
+        <div class="col m6 offset-m3">
+          <div class="card">
+            <div class="card-content">
     <%= yield %>
       </div>
-        
+        </div>
+      </div>
+  </div>
+
+  </div>
 
   </body>
 </html>

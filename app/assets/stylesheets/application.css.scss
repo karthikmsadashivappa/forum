@@ -129,6 +129,41 @@ body {
 	text-decoration: none;
 }
 
+.button {
+		background: #008CFF;
+		padding: .8em 1.5em;
+		border-radius: .5rem;
+		margin: 2em 2em 2em 0;
+		color: white;
+		text-decoration: none;
+		font-size: .8em;
+		font-weight: 100;
+				
+				}
+.button_update {
+	background: #5ACA13;
+	padding: .8em 1.5em;
+	border-radius: .5rem;
+	margin: 2em 2em 2em 0;
+	color: white;
+	text-decoration: none;
+	font-size: .8em;
+	font-weight: 100;
+}
+
+.post_title {
+	background: white;
+	padding: .5em 5%;
+	border-radius: .5em;
+}
+
+.post_contents{
+	background: white;
+	height: 378px;
+    width: 769px;
+}
+
+
 
 
 
