@@ -41,25 +41,34 @@ body {
 		align-items: center;
 
 	#logo {
-		p {
+		a {
 			text-transform: uppercase;
 			font-weight: 700;
 			font-size: 1.2rem;
-		}
-	}
-
-	#buttons {
-		background: #008CFF;
-		padding: .5em 1em;
-		border-radius: .5rem;
-		a {
-			color: white;
 			text-decoration: none;
-			font-size: .8em;
-			font-weight: 100;
+			color: #008CFF;
+			span {
+				color: #F25F5C;
+				font-weight: 400;
+			}
 		}
 	}
-}
+	.buttons{
+			display: flex;
+			justify-content: space-between;
+			.button {
+				background: #008CFF;
+				padding: .5em 1em;
+				border-radius: .5rem;
+				margin-right: .5em;
+				color: white;
+				text-decoration: none;
+				font-size: .8em;
+				font-weight: 100;
+				
+				}
+			}
+	}
 }
 
 #posts, #post_content {

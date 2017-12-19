@@ -14,11 +14,16 @@
   <header class="main_header">
   <div class="wrapper">
         <div id="logo">
-            <p>Learn Rails WithMe</p>
+       <p> <%= link_to "Learn Rails WithMe", root_path %> </p>
         </div>
-        <div id="buttons">
-            <%= link_to "New Post", new_post_path %>
-        </div>
+        <div class="buttons">
+        <% if user_signed_in? %>
+            <%= link_to "New Post", new_post_path, :class => 'button' %>
+            <% else %>
+            <%= link_to "Sign Up", new_user_registration_path, :class => 'button'%> 
+            <%= link_to "Sign In", new_user_session_path, :class => 'button'%>
+         <% end %>
+         </div>
   </div>
   </header>
 
