@@ -62,7 +62,7 @@ body {
 }
 }
 
-#posts {
+#posts, #post_content {
 	background: white;
 	padding: 2em 5%;
 	border-radius: .5em;
@@ -86,6 +86,39 @@ body {
 	}
 }
 
+#post_content {
+	h1 {
+		font-weight: 100;
+		font-size: 2em;
+		color: #3b65ad;
+		margin-top: 0;
+	}
+	p {
+		color: #8e8e94;
+		line-height: 1.8;
+		font-size: 0.9rem;
+		font-weight: 100;
+		margin-bottom: 2em;
+	}
+}
+
+.button_edit {
+	background: #50514F;
+	padding: .5em 1em;
+	margin-right: 0.5em;
+	border-radius: .5em;
+	color: white;
+	text-decoration: none;
+	
+}
+
+.button_delete {
+	background: #DA2C38;
+	padding: .5em 1em;
+	border-radius: .5em;
+	color: white;
+	text-decoration: none;
+}
 
 
 
