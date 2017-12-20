@@ -109,6 +109,56 @@ body {
 		font-weight: 100;
 		margin-bottom: 2em;
 	}
+	#comments{
+		i {
+			color: #3b65ad;
+			font-size: 1em;			
+		}
+		.comment {
+			border-bottom: 1px solid #d1d1d1;
+			padding-bottom: 1em;
+			margin-bottom: 1em;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.buttons {
+				font-size: .8em;
+				padding-top: 1.5em;
+				a {
+					color: #3b65ad;
+					border: 1px solid #3b65ad;
+					padding: .5em 1em;
+					border-radius: 0.2em;
+				}
+			}
+			.comment_content {
+				margin: 0;
+				padding: 0;
+			}
+			.comment_author {
+				color: #008CFF;
+				margin-top: .5rem;
+				font-size: 0.6em;
+				font-weight: 700;
+			}
+		}
+		input[type="submit"]{
+			background: #3b65ad;
+			border: none;
+			color: white;
+			font-weight: 100;
+			padding: .5em 1em;
+			border-radius: .2em;
+			margin-bottom: 1em;
+		}
+		textarea {
+			width: 100%;
+			min-height: 200px;
+			border: 1px solid #d1d1d1;
+			border-radius: .2em;
+			margin: 1em 0;
+		}
+	}
 }
 
 .button_edit {
@@ -157,13 +207,18 @@ body {
 	border-radius: .5em;
 }
 
-.post_contents{
-	background: white;
-	height: 378px;
-    width: 769px;
+textarea {
+			width: 100%;
+			min-height: 350px;
+			border: 1px solid #d1d1d1;
+			border-radius: .2em;
+			margin: 1em 0;
+		}
+
+
+#copyright {
+	text-align: center;
+	margin: 2em;
 }
-
-
-
 
 

@@ -4,12 +4,15 @@
 <p><%= @post.content %></p>
 
 <div id="comments">
-	<h2><%= @post.comments.count %></h2>
+	<i class="fa fa-comments-o">&nbsp;<%= @post.comments.count %> Comments</i>
 	<%= render @post.comments %>
 
-	<h3>Reply to thread</h3>
+	<h6>Reply to thread</h6>
 	<%= render "comments/form" %>
 </div>
+
+<hr>
+<br/>
 
 	<%= link_to "Edit" , edit_post_path(@post), :class => 'button_edit' %>
 	<%= link_to "Delete", post_path(@post), :class => 'button_delete', method: :delete, data: { confirm: "Are you sure you want to do this?" } %>
