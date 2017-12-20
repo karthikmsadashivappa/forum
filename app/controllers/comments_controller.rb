@@ -5,7 +5,6 @@ class CommentsController < ApplicationController
 		@post = Post.friendly.find(params[:post_id])
 		@comment = @post.comments.build(params[:comment].permit(:comment))
 
-
 		if @comment.save
 			redirect_to post_path(@post)
 		else
